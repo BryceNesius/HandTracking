@@ -3,9 +3,12 @@ import mediapipe as mp
 import time
 import HandTrackingModule as htm
 
+# This file is an example of how to easily use the the module "HandTrackingModule".
+
 prevTime = 0
 currentTime = 0
 cap = cv2.VideoCapture(1)
+# Only change is to use the imported module here we imported as 'htm'
 detector = htm.handDetector()
 
 while True:

@@ -3,6 +3,10 @@ import mediapipe as mp
 import time
 
 
+# This module was created in order to easily reuse the HandTracking functionality.
+# It is still the minimum code for Hand Tracking, but in a module to be imported and used again.
+# No need to reinvent the wheel.
+
 class handDetector():
     def __init__(self, mode=False, maxHands=2, modelComplexity=1, detectionCon=0.5, trackCon=0.5):
         self.mode = mode
